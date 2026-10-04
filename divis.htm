@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="UWC - UnitedWorldCollective - Official Homepage">
+<meta property="og:description" content="Welcome to the official UWC homepage. Cloverline research facility status: NOMINAL. Please do not contact the Collective regarding the 2006 hoax.">
+<meta name="theme-color" content="#000000">
+<title>UWC - UnitedWorldCollective - Official Homepage</title>
+<style>
+:root{--bg:#fff;--box:#fff;--txt:#000;--on:#fff;--blue:#000;--band:#444;--lt:#e6e6e6;--link:#000;--mut:#555;--line:#000;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--box:#000;--txt:#fff;--on:#000;--blue:#fff;--band:#bbb;--lt:#222;--link:#fff;--mut:#aaa;--line:#fff}}
+:root[data-theme="dark"]{--bg:#000;--box:#000;--txt:#fff;--on:#000;--blue:#fff;--band:#bbb;--lt:#222;--link:#fff;--mut:#aaa;--line:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:11px/1.45 Tahoma,Verdana,Arial,sans-serif;border-top:6px solid var(--blue);padding:8px 8px 0}
+a{color:var(--link);text-decoration:underline;cursor:pointer}
+a:hover{background:var(--txt);color:var(--box)}
+:focus-visible{outline:2px dotted var(--txt);outline-offset:2px}
+#wrap{max-width:780px;margin:0 auto;display:flex;align-items:flex-start}
+#side{width:140px;flex:none;padding-right:8px}
+#pic{height:34px;background:var(--lt);margin:0 -8px 8px 0;color:var(--band);font:bold 22px/34px Georgia,serif;text-align:center}
+#side label{display:block;font-weight:bold;color:var(--mut);margin:6px 0 2px;font-size:12px}
+#side input{width:100%;border:1px solid var(--line);background:var(--box);color:var(--txt);font:11px Tahoma,Verdana,sans-serif;padding:2px 3px}
+#side .r{margin:8px 0 6px;display:flex;gap:4px}
+#msg{margin-top:6px;color:var(--mut);font-size:10px}
+.b{background:var(--blue);color:var(--on);border:2px outset;border-color:#888 var(--line) var(--line) #888;font:bold 11px Tahoma,Verdana,sans-serif;padding:2px 7px;cursor:pointer}
+#main{flex:1;min-width:0}
+#hdr{background:var(--blue);color:var(--on);border-radius:6px 6px 0 0;display:flex;justify-content:space-between;align-items:center;padding:4px 10px}
+#hdr .logo{font:bold 28px/1 "Trebuchet MS",Arial,sans-serif;letter-spacing:-1px;color:var(--on)}
+#hdr nav a{color:var(--on);margin-left:10px}
+#hdr nav a:hover{background:var(--on);color:var(--blue)}
+#band{background:var(--band);color:var(--on);font:bold 14px Tahoma,Verdana,sans-serif;padding:3px 10px}
+.tick{border:1px solid var(--line);border-top:0;border-bottom:0;background:var(--lt);overflow:hidden;white-space:nowrap;font:10px "Courier New",monospace;padding:1px 0}
+.tick span{display:inline-block;padding-left:100%;animation:tk 32s linear infinite}
+@keyframes tk{to{transform:translateX(-100%)}}
+#box{border:1px solid var(--line);border-top:0;background:var(--box);padding:16px 20px 18px;min-height:260px}
+#box p{margin:9px 0}
+#box ul{margin:6px 0;padding-left:20px}
+#box h3{font:bold 12px Tahoma,Verdana,sans-serif;color:var(--blue);border-bottom:1px solid var(--lt);margin:16px 0 6px;padding-bottom:1px}
+.c{text-align:center}
+table.dir{border-collapse:collapse;width:100%}
+table.dir td,table.dir th{border-bottom:1px solid var(--lt);padding:2px 6px;text-align:left}
+.pf{display:flex;gap:16px;align-items:flex-start}
+.pic{width:110px;flex:none;height:110px;background:var(--lt);color:var(--band);font:bold 34px/1 Georgia,serif;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pic small{font:10px Tahoma,sans-serif;color:var(--mut)}
+table.info{border-collapse:collapse;min-width:0}
+table.info td{padding:2px 6px 2px 0;vertical-align:top}
+td.k{font-weight:bold;color:var(--mut);white-space:nowrap}
+.w{border-bottom:1px dotted var(--line);padding:4px 0}
+.seal{background:repeating-linear-gradient(135deg,var(--txt) 0 3px,var(--box) 3px 5px);color:transparent;user-select:none}
+#foot{max-width:780px;margin:0 auto;text-align:center;padding:14px 0 18px;border-top:1px solid var(--line);margin-top:14px;color:var(--txt)}
+#foot a{margin:0 5px}
+#fw{position:fixed;inset:0;background:#808080;z-index:9;overflow:auto;padding:env(safe-area-inset-top,0px) 10px 20px;color:#000;font:12px "Courier New",monospace}
+#fw[hidden]{display:none}
+.fwin{max-width:540px;margin:40px auto;background:#ccc;border:2px solid;border-color:#fff #404040 #404040 #fff}
+.fwt{background:#000;color:#fff;font-weight:bold;padding:3px 6px}
+.fwb{padding:12px 14px}
+.fwb pre{margin:8px 0;white-space:pre-wrap;background:#fff;border:2px inset #888;padding:6px}
+.fwb a{color:#000}.fwb a:hover{background:#000;color:#fff}
+@media(max-width:620px){#wrap{flex-direction:column}#side{width:100%;padding:0 0 10px}#pic{margin-right:0}.pf{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.tick span{animation:none;padding-left:0}}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="side">
+  <form id="lf" autocomplete="off">
+    <label for="em">E-mail:</label><input id="em" type="text" autocapitalize="off">
+    <label for="pw">Password:</label><input id="pw" type="password">
+    <div class="r"><button class="b" type="submit">Login</button><button class="b" type="button" data-p="register">Register</button></div>
+    <a id="hint">Forgot password?</a>
+  </form>
+  <div id="who" hidden>
+    <label>Logged in as:</label><div id="whoname"></div>
+    <div class="r"><button class="b" id="out" type="button">Logout</button></div>
+  </div>
+  <div id="msg"></div>
+</div>
+<div id="main">
+  <div id="hdr"><span class="logo">uwc</span><nav><a data-p="home">home</a><a data-p="register">register</a><a data-p="home">about</a><a data-p="help">help</a></nav></div>
+  <div id="band">Welcome to UWC!</div>
+  <div class="tick"><span>*** Welcome to the official UWC homepage *** CLOVERLINE research facility status: NOMINAL *** DAYBREAK telemetry: under routine review *** Rotation 112 is now on station *** Please do not contact the Collective regarding the 2006 hoax. ***</span></div>
+  <div id="box"></div>
+</div>
+</div>
+<div id="foot">
+  <a data-p="home">about</a><a data-p="jobs">jobs</a><a data-p="advertise">advertise</a><a data-p="terms">terms</a><a data-p="privacy">privacy</a><br>
+  a United World Collective production<br>UWC &copy; 2006
+</div>
+<div id="fw" hidden></div>
+
+<template id="home">
+<p><b>UWC is a research and technology organization that connects people, facilities and data across the world.</b></p>
+<p>Our largest project is <b>DAYBREAK</b>, humanity's solar swarm. It collects energy from the Sun, observes it, and sends extremely precise solar data back to humanity.</p>
+<p>We operate two research sites in Antarctica: <b>UniWorCol - Operation Site 1</b>, an early stage of DAYBREAK development that is now closed, and <b>Cloverline Station</b>, open since 2001. Rotation 112 is on station now.</p>
+<p>The site is open to <a data-p="jobs">a lot of staff</a>, but not everywhere yet. We're working on it.</p>
+<p>You can use UWC to:</p>
+<ul><li>Look up people on your rotation.</li><li>See how projects and facilities relate.</li><li>Find out what you need to know. Nothing more.</li></ul>
+<p><i>Information is dangerous if given to the wrong person.</i></p>
+<h3>Directory</h3>
+<table class="dir"><tr><th>Name</th><th>E-mail</th></tr>
+<tr><td>Jason Binder</td><td>jbinder@uwc.int</td></tr>
+<tr><td>Tomas Aydin</td><td>taydin@uwc.int</td></tr>
+<tr><td>Priya Nair</td><td>pnair@uwc.int</td></tr>
+<tr><td>Ingrid Vale</td><td>ivale@uwc.int</td></tr>
+<tr><td>John Evermin</td><td>jevermin@uwc.int</td></tr>
+<tr><td>Tim J Vich</td><td>tvich@uwc.int</td></tr></table>
+<p style="color:var(--mut)">Forgot your password? Enter your e-mail and use the hint link.</p>
+<p class="c"><button class="b" type="button" onclick="document.getElementById('em').focus()">Login</button> <button class="b" type="button" data-p="register">Register</button></p>
+</template>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function seal(s){return s.replace(/\[\[(.*?)\]\]/g,'<span class="seal">$1</span>')}
+function page(t,h){$('band').textContent=t;$('box').innerHTML=seal(h);window.scrollTo(0,0)}
+var P={
+ register:['Register','<p>Registration is by invitation only. Invitations are issued by UWC Communications, usually without warning, and are valid for a few hours.</p><p>Please do not contact Communications to request one.</p>'],
+ help:['Help','<p>Log in with your UWC e-mail address. The part before @uwc.int works too.</p><p>Forgot your password? Enter your e-mail and use the hint link under the login box. If the hint does not help, we are sorry, but we cannot tell you more.</p>'],
+ jobs:['Jobs','<p>UWC is hiring. Duties are not disclosed before departure. Departure may occur the same day. Your family and friends will be given an appropriate description.</p>'],
+ advertise:['Advertise','<p>UWC does not advertise. If you have seen one of our advertisements, please let Communications know.</p>'],
+ terms:['Terms','<p>By using this site you agree to receive only the information you need. Information is dangerous if given to the wrong person.</p>'],
+ privacy:['Privacy','<p>Your information is kept private. In some cases, from you.</p>']
+};
+function go(k){if(k==='home')page('Welcome to UWC!',$('home').innerHTML);else page(P[k][0],P[k][1])}
+var U={
+'jbinder@uwc.int':{pw:'claire',hint:'Mom.',name:'Jason Binder',q:'I left my family to do this. Now I need to find my way back to them.',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Heliophysicist'],['Family','Claire Binder (mother). Last contact: [[unavailable]]'],['Interests','Solar physics, DAYBREAK data, getting home'],['Voicemail','1 new message']],
+ about:'Heliophysicist on the DAYBREAK monitoring team. I took this posting knowing I might be gone a long time. Mom, if you read this, I am fine. Mostly.',
+ wall:['<b>Jason Binder</b> wrote: The DAYBREAK numbers are not behaving normally. Checking them again.','<b>Jason Binder</b> wrote: Is anyone else hearing things on the intercom? Asking for a friend.','<b>Voice message</b> from jbinder: "Jason, listen to me." Sent from this account. I did not send it.']},
+'taydin@uwc.int':{pw:'here',hint:'Where else am I going to be?',name:'Tomas Aydin',q:'Where else am I going to be?',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Engineer / maintenance'],['Recruited by','John Evermin, on the street'],['Notice given','A few hours'],['Interests','Boilers, generators, anything with a motor'],['Dislikes','The boiler, the food, the hours'],['Friends','3 (all of them)']],
+ about:'Used to be between jobs. Then a guy offered me one and would not say what it was. Cloverline has a bad boiler and worse food, but the people are okay. Do not touch the generator.',
+ wall:['<b>Tomas Aydin</b> wrote: Boiler is down again. It is fine. We are all fine.','<b>Message</b> from a family member: "Hope the conference is going well!" I am not at a conference.']},
+'pnair@uwc.int':{pw:'nominal',hint:'How I sign off.',name:'Priya Nair',q:'Nominal.',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Data analyst / audio-log keeper'],['Last login','Tomorrow, 4:20 PM'],['Audio logs','212 filed, 209 on record'],['Status','Nominal']],
+ about:'I keep the record. If it happened, it is in the log. If it is in the log, it happened. Currently the log and I disagree.',
+ wall:['<b>Priya Nair</b> wrote: Transmission received 14:02. Transmission sent 14:07. Nominal.','<b>Priya Nair</b> wrote: Jason was in the mess hall at 3:00. Jason was in the lab at 3:00. Both logged. Nominal.','<b>Priya Nair</b> wrote: It is not nominal.']},
+'ivale@uwc.int':{pw:'never',hint:'When did this start?',name:'Ingrid Vale',q:"Everyone keeps asking when this started. I don't think it did.",
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Station Director'],['Crew','Binder, Aydin, Nair'],['Reports to','UWC Communications'],['Current directive','112-C: continue operations']],
+ about:'Responsible for the crew, the station and communications. I follow UWC instructions. I am also aware that UWC does not have the whole picture either.',
+ wall:['<b>UWC Communications</b>: Directive 112-C. Continue operations. Do not inform the crew of [[sealed]].','<b>Ingrid Vale</b> wrote: Everyone is fine. I have said so three times now.','<b>Ingrid Vale</b> wrote: Orders are orders. The crew is the crew. I am still working out what to do when those disagree.']},
+'jevermin@uwc.int':{pw:'routine',hint:'How I describe everything.',name:'John Evermin',q:'This is entirely routine.',
+ rows:[['Network','UWC Headquarters'],['Position','Communications / Recruitment'],['Recruits this rotation','1 (Tomas Aydin)'],['Family notifications','Handled'],['Interests','Procedure']],
+ about:'I handle communications and recruitment. If you received an unusual offer from the Collective, it was real. If you were told something unusual about a colleague, that was probably real too.',
+ wall:['<b>Recent searches</b>: Operation Site 1 archive / Cloverline 2001 / DAYBREAK precision update','<b>Access denied</b>: Operation Site 1 archive. Clearance insufficient.','<b>John Evermin</b> wrote: How much do we actually know? I would like to see the file.']},
+'tvich@uwc.int':{any:1,hint:'No hint on file.',fw:1,name:'Tim J Vich'}
+};
+function prof(u){
+ var r=u.rows.map(function(x){return '<tr><td class="k">'+x[0]+':</td><td>'+x[1]+'</td></tr>'}).join('');
+ var w=u.wall.map(function(x){return '<div class="w">'+x+'</div>'}).join('');
+ var ini=u.name.split(' ').map(function(s){return s[0]}).join('');
+ page(u.name,'<div class="pf"><div class="pic">'+ini+'<small>no photo</small></div><table class="info">'+r+'<tr><td class="k">Quote:</td><td><i>"'+u.q+'"</i></td></tr></table></div><h3>About me</h3><p>'+u.about+'</p><h3>The Wall</h3>'+w);
+}
+function firewall(id){
+ var f=$('fw');
+ f.innerHTML='<div class="fwin"><div class="fwt">UWC SecureGate Perimeter Firewall v3.2</div><div class="fwb"><b>ACCESS DENIED (403.7)</b><pre>User:     '+id+'\nProfile:  Tim J Vich\nContents: <span class="seal">sealed sealed sealed</span>\nReason:   Account is not associated with an active rotation.\nIncident: UWC-SG-0412-TJV\nForwarded to: Communications</pre>Your connection has been logged. Please do not attempt to log in again.<br><br><a data-p="fwback">Return to login</a></div></div>';
+ f.hidden=false;
+}
+function msg(t){$('msg').textContent=t}
+function login(id){
+ var u=U[id];$('lf').hidden=true;$('who').hidden=false;$('whoname').textContent=id;msg('');
+ if(u.fw){firewall(id)}else{prof(u)}
+}
+function logout(){$('lf').hidden=false;$('who').hidden=true;$('pw').value='';msg('');go('home')}
+function norm(){var v=$('em').value.trim().toLowerCase();return v&&v.indexOf('@')<0?v+'@uwc.int':v}
+$('lf').addEventListener('submit',function(e){
+ e.preventDefault();var id=norm(),u=U[id];
+ if(!u||(!u.any&&u.pw!==$('pw').value.trim().toLowerCase())){msg('Incorrect e-mail or password. This attempt has been logged.');return}
+ login(id);
+});
+$('hint').addEventListener('click',function(){var u=U[norm()];msg(u?'Hint: '+u.hint:'No account found for that e-mail.')});
+$('out').addEventListener('click',logout);
+document.addEventListener('click',function(e){
+ var a=e.target.closest('[data-p]');if(!a)return;e.preventDefault();
+ var k=a.getAttribute('data-p');
+ if(k==='fwback'){$('fw').hidden=true;logout()}else go(k);
+});
+go('home');
+})();
+</script>
+</body>
+</html>
