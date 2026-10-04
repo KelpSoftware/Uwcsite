@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
 <title>UWC - UnitedWorldCollective - Official Homepage</title>
 <style>
-:root{--k:#000;--w:#fff}
+:root{--k:#000;--w:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--k:#fff;--w:#000}}
+:root[data-theme="dark"]{--k:#fff;--w:#000}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;padding:12px;color:var(--k);font:13px/1.5 Verdana,Tahoma,Arial,sans-serif;
  background:var(--w) linear-gradient(45deg,var(--k) 25%,transparent 25%,transparent 75%,var(--k) 75%) 0 0/4px 4px}
@@ -37,9 +41,11 @@ h2{font:bold 20px "Times New Roman",serif;border-bottom:2px solid var(--k);margi
 h2:first-child{margin-top:0}
 h3{font:bold 14px Verdana,sans-serif;margin:12px 0 4px}
 hr{border:0;border-top:2px dotted var(--k);margin:16px 0}
+p{margin:6px 0}
 table.data{border-collapse:collapse;width:100%;margin:8px 0}
 table.data th,table.data td{border:1px solid var(--k);padding:4px 8px;text-align:left;vertical-align:top}
 table.data th{background:var(--k);color:var(--w)}
+.scroll{overflow-x:auto}
 .log{border:1px solid var(--k);border-left:6px solid var(--k);padding:8px 12px;margin:10px 0;font:12px/1.6 "Courier New",monospace}
 .log .hd{font-weight:bold;border-bottom:1px dashed var(--k);margin-bottom:6px}
 .log .sig{text-align:right;font-style:italic}
@@ -66,9 +72,78 @@ table.data th{background:var(--k);color:var(--w)}
   <h1>U N I T E D &nbsp; W O R L D &nbsp; C O L L E C T I V E</h1>
   <div class="sub">~ UWC ~ Advancement through careful selection ~</div>
   <div class="ticker"><span>*** Welcome to the official UWC homepage *** CLOVERLINE research facility status: NOMINAL *** Please do not contact the Collective regarding the 2006 hoax.  ***</span></div>
+</div>
+
+<table class="layout"><tr>
+<td class="side">
+  <div class="box"><h4>Visitors</h4><div>You are visitor no.<br><span class="ctr">004127</span></div></div>
+  <div class="box"><h4>Status</h4><div>Cloverline: OK<br>DAYBREAK: <span class="blink">&#9608;</span> pending</div></div>
+  <div>
+    <span class="badge"><i>UWC</i> issued</span>
+  </div>
+</td>
 
 <td class="main">
-  
+  <h2 id="welcome">Welcome</h2>
+  <p>The <b>United World Collective</b> is a research and technology organization with facilities and personnel on every inhabited continent, our projects are large enough that no single nation, laboratory or budget could carry them.</p>
+
+  <h2 id="about">About UWC</h2>
+  <p>UWC works in the public interest, our work is organized into small, independent teams so that each can do its job without distraction.</p>
+
+  <h2 id="daybreak">DAYBREAK</h2>
+  <p>DAYBREAK is a swarm of solar collectors surrounding the Sun. It was built to:</p>
+  <ul>
+    <li>collect energy from the Sun,</li>
+    <li>observe the Sun continuously,</li>
+    <li>gather extremely precise solar data, and</li>
+    <li>transmit that data back to humanity.</li>
+  </ul>
+  <p>It is, by any measure, the greatest thing we have built.</p>
+  <h3>Software update history</h3>
+  <p>A precision software update dramatically improved the swarm's measurements. After the update, DAYBREAK began reporting expected results.
+  <table class="data">
+    <tr><th>Item</th><th>Public status</th></tr>
+    <tr><td>DAYBREAK</td><td>Retired 2008</td></tr>
+  </table>
+
+  <h2 id="sites">Facilities</h2>
+  <div class="scroll"><table class="data">
+    <tr><th>Facility</th><th>Location</th><th>Years</th><th>Public recordd/th></tr>
+
+    <tr><td>Cloverline Station</td><td>Antarctica</td><td>2001 - 2009</td><td>Monitors DAYBREAK. Houses rotating teams of researchers and specialists.</td></tr>
+    <tr><td>Other facilities</td><td>Underwater research, and near-orbit stations.</td><td>Unified, 2001 - 2012</td><td>The UWSD-S experienced numerous failures during the 2006 Hoax period, cut-off reports, ect. underwater stations experience undocumented.</td></tr>
+  </table></div>
+
+  <h2 id="notices">DECLASSIFIED</h2>
+  <div class="log">
+    <div class="hd">FROM: Tim J. Vich, Director of Archival Duties. <br>72° 00' 36" S, 168° 34' 40" E<br>SUBJ: I'm getting paranoid.</div>
+    John,<br>I am becoming paranoid, i know something is wrong, something is missing. If you notice something, dont ask me who I am, for it may not be me.
+    <div class="sig">- Tim J. Vich</div>
+  </div>
+
+  <h2 id="careers">Careers</h2>
+  <p>UWC Operates under exclusive selection.</p>
+  <h3>Point of contact</h3>
+  <table class="data">
+    <tr><td>Contact Email</td><td>contact@unitedworldcollective.com</td><td>NOTE: Message will be forwarded to the listed person (Example: "John Evermin") in the Email, if not listed, it will go straight to automation.</td></tr>
+  </table>
+
+  <h2 id="faq">FAQ</h2>
+  <h3>Is the Cloverline incident an isolated event?</h3>
+  <p>No. We do not believe it is isolated.</p>
+  <h3>What was the 2006 hoax?</h3>
+  <p>Please do not contact the Collective regarding the 2006 hoax.</p>
+
+  <hr>
+
+</td>
+</tr></table>
+
+<div id="foot">
+  &copy; UWC - United World Collective. All rights reserved.<br>
+  This page is best viewed by authorized personnel.
+</div>
+</div>
 
 <script>
 (function(){
