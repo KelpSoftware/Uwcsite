@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UWC - UnitedWorldCollective - Official Homepage</title>
+<style>
+:root{--k:#000;--w:#fff}
+*{box-sizing:border-box}
+body{margin:0;padding:12px;color:var(--k);font:13px/1.5 Verdana,Tahoma,Arial,sans-serif;
+ background:var(--w) linear-gradient(45deg,var(--k) 25%,transparent 25%,transparent 75%,var(--k) 75%) 0 0/4px 4px}
+a{color:var(--k)}
+a:visited{text-decoration-style:dotted}
+a:hover{background:var(--k);color:var(--w)}
+:focus-visible{outline:2px dotted var(--k);outline-offset:2px;background:var(--w)}
+#page{max-width:780px;margin:0 auto;background:var(--w);border:3px double var(--k)}
+#top{background:var(--k);color:var(--w);text-align:center;padding:14px 8px;border-bottom:3px double var(--w)}
+#top h1{font:bold 34px/1.1 "Times New Roman",Times,serif;letter-spacing:3px;margin:0}
+#top .sub{font:italic 14px Georgia,serif;margin-top:4px}
+.ticker{border-top:1px solid var(--w);border-bottom:1px solid var(--w);overflow:hidden;white-space:nowrap;margin-top:10px;padding:2px 0;font:bold 12px "Courier New",monospace}
+.ticker span{display:inline-block;padding-left:100%;animation:tick 28s linear infinite}
+@keyframes tick{to{transform:translateX(-100%)}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{visibility:hidden}}
+table.layout{width:100%;border-collapse:collapse}
+td.side{width:165px;vertical-align:top;border-right:1px solid var(--k);padding:8px;background:var(--w)}
+td.main{vertical-align:top;padding:12px 16px}
+.menu{list-style:none;margin:0 0 12px;padding:0}
+.menu li{margin-bottom:4px}
+.menu a{display:block;text-decoration:none;text-align:center;font-weight:bold;padding:3px 6px;border:2px outset var(--w);border-color:var(--w) var(--k) var(--k) var(--w);outline:1px solid var(--k);background:var(--w)}
+.menu a:hover{background:var(--k);color:var(--w)}
+.box{border:1px solid var(--k);margin-bottom:12px;font-size:11px}
+.box h4{margin:0;background:var(--k);color:var(--w);font-size:11px;padding:2px 6px;text-transform:uppercase}
+.box div{padding:6px}
+.ctr{font:bold 18px "Courier New",monospace;letter-spacing:3px;background:var(--k);color:var(--w);display:inline-block;padding:1px 6px;border:2px inset var(--w)}
+h2{font:bold 20px "Times New Roman",serif;border-bottom:2px solid var(--k);margin:18px 0 8px;padding-bottom:2px}
+h2:first-child{margin-top:0}
+h3{font:bold 14px Verdana,sans-serif;margin:12px 0 4px}
+hr{border:0;border-top:2px dotted var(--k);margin:16px 0}
+table.data{border-collapse:collapse;width:100%;margin:8px 0}
+table.data th,table.data td{border:1px solid var(--k);padding:4px 8px;text-align:left;vertical-align:top}
+table.data th{background:var(--k);color:var(--w)}
+.log{border:1px solid var(--k);border-left:6px solid var(--k);padding:8px 12px;margin:10px 0;font:12px/1.6 "Courier New",monospace}
+.log .hd{font-weight:bold;border-bottom:1px dashed var(--k);margin-bottom:6px}
+.log .sig{text-align:right;font-style:italic}
+.notice{border:2px solid var(--k);padding:6px 10px;text-align:center;font-weight:bold;margin:10px 0}
+.redact{font:inherit;color:var(--k);background:var(--k);border:0;padding:0 2px;margin:0;cursor:pointer;border-radius:0}
+.redact[aria-pressed="true"]{background:var(--w);color:var(--k);cursor:default;text-decoration:underline}
+.redact.sealed{cursor:not-allowed;background:repeating-linear-gradient(135deg,var(--k) 0 3px,var(--w) 3px 5px);color:transparent}
+.btn{font:bold 11px Verdana,sans-serif;background:var(--w);color:var(--k);border:2px outset var(--w);border-color:var(--w) var(--k) var(--k) var(--w);outline:1px solid var(--k);padding:2px 8px}
+.badge{display:inline-block;border:1px solid var(--k);font:bold 10px Arial,sans-serif;padding:1px 4px;margin:2px}
+.badge i{background:var(--k);color:var(--w);font-style:normal;padding:0 3px}
+#foot{border-top:3px double var(--k);text-align:center;font-size:11px;padding:10px}
+@media(max-width:620px){
+ td.side,td.main{display:block;width:100%;border-right:0}
+ td.side{border-bottom:1px solid var(--k)}
+ #top h1{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){.ticker span,.blink{animation:none}.ticker span{padding-left:0}}
+</style>
+</head>
+<body>
+<div id="page">
+
+<div id="top">
+  <h1>U N I T E D &nbsp; W O R L D &nbsp; C O L L E C T I V E</h1>
+  <div class="sub">~ UWC / UniWorCol ~ Advancement through careful selection ~</div>
+  <div class="ticker"><span>*** Welcome to the official UWC homepage *** Clover Line facility status: NOMINAL *** Records prior to 11/2006 may not match your recollection *** Please do not contact the Collective regarding the 2006 incident ***</span></div>
+</div>
+
+<table class="layout"><tr>
+  <div class="box"><h4>Visitors</h4><div style="text-align:center">You are visitor<br><span class="ctr" id="ctr">000417</span></div></div>
+  <div class="box"><div style="text-align:center"><b id="n">0</b> of <b id="t">0</b> items open</div></div>
+  <div class="box"><h4>Facility</h4><div>Clover Line<br>Status: <b>NOMINAL</b><br>Observation: <b>ACTIVE</b></div></div>
+  <div style="text-align:center">
+    <span class="badge"><i>HTML</i> 4.01</span>
+    <span class="badge"><i>CSS</i> 2.0</span>
+    <span class="badge">Best in <i>IE 6.0</i></span>
+  </div>
+</td>
+
+<td class="main">
+<h2 id="home">Welcome!</h2>
+<p>Thank you for visiting the homepage of the <b>UnitedWorldCollective</b>. Since 2000, the UWC has supported scientific advancements made by a small number of carefully selected individuals.</p>
+<p>We do not take applications.<span class="blink">&#9654;</span> <b>Thank you for understanding.</b></p>
+<div class="notice">This site is under construction. Some pages are incomplete. Last updated: 11/14/2006</div>
+
+
+
+<script>
+(function(){
+  var bars=document.querySelectorAll('.redact:not(.sealed)'),n=0;
+  document.getElementById('t').textContent=bars.length;
+  bars.forEach(function(b){
+    b.setAttribute('aria-pressed','false');
+    b.addEventListener('click',function(){
+      if(b.getAttribute('aria-pressed')==='true')return;
+      b.setAttribute('aria-pressed','true');
+      n++;document.getElementById('n').textContent=n;
+    });
+  });
+})();
+</script>
+</body>
+</html>
