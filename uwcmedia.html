@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="UWC - UnitedWorldCollective - Official Homepage">
+<meta property="og:description" content="Welcome to the official UWC homepage. Cloverline research facility status: NOMINAL. Please do not contact the Collective regarding the 2006 hoax.">
+<meta name="theme-color" content="#000000">
+<title>UWC - UnitedWorldCollective - Official Homepage</title>
+<style>
+:root{--bg:#fff;--box:#fff;--txt:#000;--on:#fff;--blue:#000;--band:#444;--lt:#e6e6e6;--link:#000;--mut:#555;--line:#000;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--box:#000;--txt:#fff;--on:#000;--blue:#fff;--band:#bbb;--lt:#222;--link:#fff;--mut:#aaa;--line:#fff}}
+:root[data-theme="dark"]{--bg:#000;--box:#000;--txt:#fff;--on:#000;--blue:#fff;--band:#bbb;--lt:#222;--link:#fff;--mut:#aaa;--line:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:11px/1.45 Tahoma,Verdana,Arial,sans-serif;border-top:6px solid var(--blue);padding:8px 8px 0}
+a{color:var(--link);text-decoration:underline;cursor:pointer}
+a:hover{background:var(--txt);color:var(--box)}
+:focus-visible{outline:2px dotted var(--txt);outline-offset:2px}
+#wrap{max-width:780px;margin:0 auto;display:flex;align-items:flex-start}
+#side{width:140px;flex:none;padding-right:8px}
+#pic{height:34px;background:var(--lt);margin:0 -8px 8px 0;color:var(--band);font:bold 22px/34px Georgia,serif;text-align:center}
+#side label{display:block;font-weight:bold;color:var(--mut);margin:6px 0 2px;font-size:12px}
+#side input{width:100%;border:1px solid var(--line);background:var(--box);color:var(--txt);font:11px Tahoma,Verdana,sans-serif;padding:2px 3px}
+#side .r{margin:8px 0 6px;display:flex;gap:4px}
+#msg{margin-top:6px;color:var(--mut);font-size:10px}
+.b{background:var(--blue);color:var(--on);border:2px outset;border-color:#888 var(--line) var(--line) #888;font:bold 11px Tahoma,Verdana,sans-serif;padding:2px 7px;cursor:pointer}
+#main{flex:1;min-width:0}
+#hdr{background:var(--blue);color:var(--on);border-radius:6px 6px 0 0;display:flex;justify-content:space-between;align-items:center;padding:4px 10px}
+#hdr .logo{font:bold 28px/1 "Trebuchet MS",Arial,sans-serif;letter-spacing:-1px;color:var(--on)}
+#hdr nav a{color:var(--on);margin-left:10px}
+#hdr nav a:hover{background:var(--on);color:var(--blue)}
+#band{background:var(--band);color:var(--on);font:bold 14px Tahoma,Verdana,sans-serif;padding:3px 10px}
+.tick{border:1px solid var(--line);border-top:0;border-bottom:0;background:var(--lt);overflow:hidden;white-space:nowrap;font:10px "Courier New",monospace;padding:1px 0}
+.tick span{display:inline-block;padding-left:100%;animation:tk 32s linear infinite}
+@keyframes tk{to{transform:translateX(-100%)}}
+#box{border:1px solid var(--line);border-top:0;background:var(--box);padding:16px 20px 18px;min-height:260px}
+#box p{margin:9px 0}
+#box ul{margin:6px 0;padding-left:20px}
+#box h3{font:bold 12px Tahoma,Verdana,sans-serif;color:var(--blue);border-bottom:1px solid var(--lt);margin:16px 0 6px;padding-bottom:1px}
+.c{text-align:center}
+table.dir{border-collapse:collapse;width:100%}
+table.dir td,table.dir th{border-bottom:1px solid var(--lt);padding:2px 6px;text-align:left}
+.pf{display:flex;gap:16px;align-items:flex-start}
+.pic{width:110px;flex:none;height:110px;background:var(--lt);color:var(--band);font:bold 34px/1 Georgia,serif;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pic small{font:10px Tahoma,sans-serif;color:var(--mut)}
+table.info{border-collapse:collapse;min-width:0}
+table.info td{padding:2px 6px 2px 0;vertical-align:top}
+td.k{font-weight:bold;color:var(--mut);white-space:nowrap}
+.w{border-bottom:1px dotted var(--line);padding:4px 0}
+.seal{background:repeating-linear-gradient(135deg,var(--txt) 0 3px,var(--box) 3px 5px);color:transparent;user-select:none}
+#foot{max-width:780px;margin:0 auto;text-align:center;padding:14px 0 18px;border-top:1px solid var(--line);margin-top:14px;color:var(--txt)}
+#foot a{margin:0 5px}
+#fw{position:fixed;inset:0;background:#808080;z-index:9;overflow:auto;padding:env(safe-area-inset-top,0px) 10px 20px;color:#000;font:12px "Courier New",monospace}
+#fw[hidden]{display:none}
+.fwin{max-width:540px;margin:40px auto;background:#ccc;border:2px solid;border-color:#fff #404040 #404040 #fff}
+.fwt{background:#000;color:#fff;font-weight:bold;padding:3px 6px}
+.fwb{padding:12px 14px}
+.fwb pre{margin:8px 0;white-space:pre-wrap;background:#fff;border:2px inset #888;padding:6px}
+.fwb a{color:#000}.fwb a:hover{background:#000;color:#fff}
+@media(prefers-reduced-motion:reduce){.tick span{animation:none;padding-left:0}}
+#box label{display:block;font-weight:bold;color:var(--mut);margin:8px 0 2px}
+#box input,#box textarea{width:100%;border:1px solid var(--line);background:var(--box);color:var(--txt);font:11px Tahoma,Verdana,sans-serif;padding:3px 4px}
+.cl{border:1px solid var(--line);height:300px;overflow-y:auto;padding:4px 8px;margin-bottom:8px}
+.m{border-bottom:1px dotted var(--line);padding:3px 0;overflow-wrap:anywhere}
+.m .t{color:var(--mut);font-size:10px}
+.x{font-size:10px;margin-left:6px}
+#who{font-size:11px}
+#hdr nav{text-align:right;line-height:1.7}
+.pic{overflow:hidden}.pic img{width:100%;height:100%;display:block;image-rendering:pixelated}
+.nt{border:2px solid var(--line);padding:8px;margin-top:10px}
+[hidden]{display:none!important}
+body{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
+#ev{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);z-index:25;background:#000;color:#fff;border-bottom:3px double #fff;padding:8px 12px;font:bold 12px "Courier New",monospace;text-align:center}
+#evo{position:fixed;inset:0;z-index:40;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font:bold 22px "Courier New",monospace;padding:20px;cursor:pointer}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--blue);color:var(--on);border:2px solid var(--line);padding:8px 14px;max-width:90%;z-index:30;font-size:12px}
+.gl #hdr,.gl #band,.gl #box{animation:gl .25s steps(2) infinite}
+@keyframes gl{0%{transform:none}25%{transform:translate(-3px,1px) skewX(2deg)}50%{transform:translate(3px,-1px);filter:invert(1)}75%{transform:translate(-1px,2px)}}
+@media(prefers-reduced-motion:reduce){.gl #hdr,.gl #band,.gl #box{animation:none}.gl #box{filter:invert(1)}}
+#box{overflow-wrap:anywhere}
+@media(max-width:620px){
+ body{padding-top:6px;font-size:13px}
+ #wrap{flex-direction:column;width:100%}
+ #side{width:100%;padding:0 0 10px}
+ #pic{margin:0 0 8px;height:28px;line-height:28px}
+ #hdr{flex-wrap:wrap;justify-content:center;gap:2px 10px;padding:6px}
+ #hdr nav{text-align:center}
+ #hdr nav a{display:inline-block;padding:5px 6px;margin:0}
+ #band{font-size:15px}
+ #box{padding:12px;min-height:200px}
+ #box input,#box textarea,#side input{font-size:16px}
+ .b{padding:8px 14px;font-size:13px;min-height:36px}
+ .pf{flex-direction:column;align-items:center}
+ table.info{width:100%}
+ .cl{height:50vh;height:50dvh}
+ .x{padding:6px}
+ table.dir td,table.dir th{padding:5px 3px}
+ .fwin{margin:16px auto}
+ .fwb{padding:10px}
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="side">
+  <form id="lf" autocomplete="off">
+    <label for="em">E-mail:</label><input id="em" type="text" autocapitalize="off">
+    <label for="pw">Password:</label><input id="pw" type="password">
+    <div class="r"><button class="b" type="submit">Login</button><button class="b" type="button" data-p="register">Register</button></div>
+  </form>
+  <div id="who" hidden>
+    <label>Logged in as:</label><div id="whoname"></div>
+    <div style="margin:6px 0"><a data-u="me">My profile</a><br><a data-p="chat">Chatroom</a><br><a data-p="admin" id="adm" hidden>Control room</a></div><div class="r"><button class="b" id="out" type="button">Logout</button></div>
+  </div>
+  <div id="msg"></div>
+</div>
+<div id="main">
+  <div id="hdr"><span class="logo">uwc</span><nav><a data-p="home">home</a><a data-p="chat">chat</a><a data-p="daybreak">daybreak</a><a data-p="logs">logs</a><a data-p="archive">archive</a><a data-p="register">register</a><a data-p="home">about</a><a data-p="help">help</a></nav></div>
+  <div id="band">Welcome to UWC!</div>
+  <div class="tick"><span>*** Welcome to the official UWC homepage *** CLOVERLINE research facility status: NOMINAL *** DAYBREAK telemetry: under routine review *** Rotation 112 is now on station *** Please do not contact the Collective regarding the 2006 hoax. ***</span></div>
+  <div id="box"></div>
+</div>
+</div>
+<div id="foot">
+  <a data-p="home">about</a><a data-p="jobs">jobs</a><a data-p="advertise">advertise</a><a data-p="terms">terms</a><a data-p="privacy">privacy</a><br>
+  a United World Collective production<br>UWC &copy; 2006
+</div>
+<div id="ev" hidden></div><div id="evo" hidden></div><div id="toast" hidden></div>
+<div id="fw" hidden></div>
+
+<template id="home">
+<p><b>UWC is a research and technology organization that connects people, facilities and data across the world.</b></p>
+<p>Our largest project is <b>DAYBREAK</b>, humanity's solar swarm. It collects energy from the Sun, observes it, and sends extremely precise solar data back to humanity.</p>
+<p>We operate two research sites in Antarctica: <b>UniWorCol - Operation Site 1</b>, an early stage of DAYBREAK development that is now closed, and <b>Cloverline Station</b>, open since 2001. Rotation 112 is on station now.</p>
+<p>The site is open to <a data-p="jobs">a lot of staff</a>, but not everywhere yet. We're working on it.</p>
+<p>You can use UWC to:</p>
+<ul><li>Look up people on your rotation.</li><li>See how projects and facilities relate.</li><li>Find out what you need to know. Nothing more.</li><li>Read the station audio logs and watch DAYBREAK telemetry.</li><li>Search the archive. Results vary by clearance.</li></ul>
+<p><i>Information is dangerous if given to the wrong person.</i></p>
+<h3>Directory</h3>
+<table class="dir"><tr><th>Name</th><th>E-mail</th></tr><!--DIR--></table>
+<p style="color:var(--mut)">Click a name to look up a profile. Only the cast can edit one, and only cast members can post in the chatroom.</p>
+<p class="c"><button class="b" type="button" onclick="document.getElementById('em').focus()">Login</button> <button class="b" type="button" data-p="register">Register</button></p>
+</template>
+
+<script type="module">
+var FB=0,initializeApp,getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged,getFirestore,doc,getDoc,setDoc,collection,addDoc,deleteDoc,getDocs,query,orderBy,limit,onSnapshot,serverTimestamp,writeBatch,Timestamp;
+
+/* Paste your Firebase web app config here. These values are public by design;
+   the security comes from firestore.rules and Firebase Auth, not from hiding them. */
+var CFG={apiKey:"AIzaSyBeTZj0hUhkFcZgadEXWu0dNyfVmd2cmj0",authDomain:"uwcsite-763ab.firebaseapp.com",projectId:"uwcsite-763ab",appId:"1:177804520690:web:0a1ea86aa2a1661442746b"};
+
+
+var $=function(i){return document.getElementById(i)};
+var DEF={sonoia:{hidden:1,name:'SONOIA',q:'Nominal.',rows:[['Network','[[unknown]]'],['Status','[[present]]']],about:'There is nothing to report.',wall:[]},jbinder:{name:'Jason Binder',q:'I left my family to do this. Now I need to find my way back to them.',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Heliophysicist'],['Family','Claire Binder (mother). Last contact: [[unavailable]]'],['Interests','Solar physics, DAYBREAK data, getting home'],['Voicemail','1 new message']],
+ about:'Heliophysicist on the DAYBREAK monitoring team. I took this posting knowing I might be gone a long time. Mom, if you read this, I am fine. Mostly.',
+ wall:['<b>Jason Binder</b> wrote: The DAYBREAK numbers are not behaving normally. Checking them again.','<b>Jason Binder</b> wrote: Is anyone else hearing things on the intercom? Asking for a friend.','<b>Voice message</b> from jbinder: "Jason, listen to me." Sent from this account. I did not send it.']},
+taydin:{name:'Tomas Aydin',q:'Where else am I going to be?',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Engineer / maintenance'],['Recruited by','John Evermin, on the street'],['Notice given','A few hours'],['Interests','Boilers, generators, anything with a motor'],['Dislikes','The boiler, the food, the hours'],['Friends','3 (all of them)']],
+ about:'Used to be between jobs. Then a guy offered me one and would not say what it was. Cloverline has a bad boiler and worse food, but the people are okay. Do not touch the generator.',
+ wall:['<b>Tomas Aydin</b> wrote: Boiler is down again. It is fine. We are all fine.','<b>Message</b> from a family member: "Hope the conference is going well!" I am not at a conference.']},
+pnair:{name:'Priya Nair',q:'Nominal.',
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Data analyst / audio-log keeper'],['Last login','Tomorrow, 4:20 PM'],['Audio logs','212 filed, 209 on record'],['Status','Nominal']],
+ about:'I keep the record. If it happened, it is in the log. If it is in the log, it happened. Currently the log and I disagree.',
+ wall:['<b>Priya Nair</b> wrote: Transmission received 14:02. Transmission sent 14:07. Nominal.','<b>Priya Nair</b> wrote: Jason was in the mess hall at 3:00. Jason was in the lab at 3:00. Both logged. Nominal.','<b>Priya Nair</b> wrote: It is not nominal.']},
+ivale:{name:'Ingrid Vale',q:"Everyone keeps asking when this started. I don't think it did.",
+ rows:[['Network','Cloverline Station, Rotation 112'],['Position','Station Director'],['Crew','Binder, Aydin, Nair'],['Reports to','UWC Communications'],['Current directive','112-C: continue operations']],
+ about:'Responsible for the crew, the station and communications. I follow UWC instructions. I am also aware that UWC does not have the whole picture either.',
+ wall:['<b>UWC Communications</b>: Directive 112-C. Continue operations. Do not inform the crew of [[sealed]].','<b>Ingrid Vale</b> wrote: Everyone is fine. I have said so three times now.','<b>Ingrid Vale</b> wrote: Orders are orders. The crew is the crew. I am still working out what to do when those disagree.']},
+jevermin:{name:'John Evermin',q:'This is entirely routine.',
+ rows:[['Network','UWC Headquarters'],['Position','Communications / Recruitment'],['Recruits this rotation','1 (Tomas Aydin)'],['Family notifications','Handled'],['Interests','Procedure']],
+ about:'I handle communications and recruitment. If you received an unusual offer from the Collective, it was real. If you were told something unusual about a colleague, that was probably real too.',
+ wall:['<b>Recent searches</b>: Operation Site 1 archive / Cloverline 2001 / DAYBREAK precision update','<b>Access denied</b>: Operation Site 1 archive. Clearance insufficient.','<b>John Evermin</b> wrote: How much do we actually know? I would like to see the file.']}};
+Object.keys(DEF).forEach(function(k){var d=DEF[k];d.email=k+'@uwc.int';d.rows=d.rows.map(function(r){return r[0]+': '+r[1]}).join('\n');d.wall=d.wall.map(function(w){return w.replace(/<[^>]+>/g,'')})});
+var app,auth,db;
+var me=null,R={t:'home'},unsub=null,sunUntil=0;
+var m0=location.hash.match(/^#u=(\w+)/);if(m0&&DEF[m0[1]]&&!DEF[m0[1]].hidden)R={t:'p',id:m0[1]};
+if(CFG.apiKey.indexOf('PASTE')===0)$('msg').textContent='Firebase is not configured yet. Logins and chat are offline.';
+
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function S(s){return esc(s).replace(/\[\[(.*?)\]\]/g,'<span class="seal">$1</span>')}
+function page(t,h){$('band').textContent=t;$('box').innerHTML=h;window.scrollTo(0,0)}
+function msg(t){$('msg').textContent=t;if(t){var o=$('toast');o.textContent=t;o.hidden=false;clearTimeout(msg.h);msg.h=setTimeout(function(){o.hidden=true},4500)}}
+var P={ register:['Register','<p>Registration is by invitation only. Invitations are issued by UWC Communications, usually without warning, and are valid for a few hours.</p><p>Please do not contact Communications to request one.</p>'],
+ help:['Help','<p>Accounts are issued by UWC Communications to cast members only. Log in with your UWC e-mail address. The part before @uwc.int works too.</p><p>If you cannot log in, please do not contact Communications.</p>'],
+ jobs:['Jobs','<p>UWC is hiring. Duties are not disclosed before departure. Departure may occur the same day. Your family and friends will be given an appropriate description.</p>'],
+ advertise:['Advertise','<p>UWC does not advertise. If you have seen one of our advertisements, please let Communications know.</p>'],
+ terms:['Terms','<p>By using this site you agree to receive only the information you need. Information is dangerous if given to the wrong person.</p>'],
+ privacy:['Privacy','<p>Your information is kept private. In some cases, from you.</p>']};
+function dir(){return Object.keys(DEF).filter(function(k){return!DEF[k].hidden}).map(function(k){return '<tr><td><a data-u="'+k+'">'+DEF[k].name+'</a></td><td>'+DEF[k].email+'</td></tr>'}).join('')+'<tr><td><a data-u="tvich">Tim J Vich</a></td><td>tvich@uwc.int</td></tr>'}
+function nav(r){if(unsub){unsub();unsub=null}R=r;if(r.t!=='p')hs(location.pathname+location.search);render()}
+function render(){try{render0()}catch(e){page('Error','<p>This page could not be loaded.</p>')}}
+function hs(h){try{history.replaceState(null,'',h)}catch(e){}}
+function render0(){
+ if(R.t==='chat')return chat();
+ if(R.t==='daybreak')return daybreak();
+ if(R.t==='logs')return logs();
+ if(R.t==='archive')return archive();
+ if(R.t==='register')return registerPage();
+ if(R.t==='p')return profile(R.id);
+ if(R.t==='e'&&me&&me===R.id)return edit(R.id);
+ if(R.t==='admin'&&me==='sonoia')return admin();
+ if(R.t==='home'||R.t==='e'||R.t==='admin')return page('Welcome to UWC!',$('home').innerHTML.replace('<!--DIR-->',dir()));
+ page(P[R.t][0],P[R.t][1]);
+}
+function rowsHtml(t){return t.split('\n').filter(Boolean).map(function(l){var i=l.indexOf(':');return i<0?'<tr><td colspan="2">'+S(l)+'</td></tr>':'<tr><td class="k">'+esc(l.slice(0,i))+':</td><td>'+S(l.slice(i+1).trim())+'</td></tr>'}).join('')}
+
+async function load(id){
+ try{
+  var s=await getDoc(doc(db,'profiles',id));
+  if(s.exists()){
+   var w=await getDocs(query(collection(db,'profiles',id,'wall'),orderBy('ts','desc'),limit(50)));
+   return{p:s.data(),w:w.docs.map(function(d){return{id:d.id,text:d.data().text}})};
+  }
+ }catch(e){}
+ var d=DEF[id];return{p:d,w:d.wall.map(function(t){return{text:t}})};
+}
+async function profile(id){
+ var d=DEF[id],mine=me===id;
+ if(d.hidden&&!mine){nav({t:'home'});return}
+ page(d.name,'<p>Loading...</p>');hs('#u='+id);
+ var x=await load(id);if(R.t!=='p'||R.id!==id)return;
+ var p=x.p,ini=d.name.split(' ').map(function(s){return s[0]}).join('');
+ var h='<div class="pf"><div class="pic">'+picHtml(p.pic,ini)+'</div><table class="info">'+rowsHtml(p.rows)+'<tr><td class="k">Quote:</td><td><i>"'+S(p.q)+'"</i></td></tr></table></div>';
+ if(mine)h+='<p><button class="b" data-act="edit">Edit profile</button></p>';
+ h+='<h3>About me</h3><p>'+S(p.about)+'</p><h3>The Wall</h3>';
+ if(mine)h+='<textarea id="wt" rows="3" maxlength="900" placeholder="Post to your wall"></textarea><p><button class="b" data-act="wpost">Post</button></p>';
+ h+=x.w.map(function(w){return '<div class="w">'+S(w.text)+(mine&&w.id?' <a class="x" data-act="wdel" data-id="'+w.id+'">delete</a>':'')+'</div>'}).join('')||'<p>Nothing posted yet.</p>';
+ $('box').innerHTML=h;
+}
+async function edit(id){
+ var x=await load(id),p=x.p;
+ page('Edit profile','<label>Picture (auto-pixelated to 64x64, 4 grays)</label><input id="ef" type="file" accept="image/*"><p><button class="b" type="button" data-act="nopic">Remove picture</button></p><div class="pic" id="ep"></div><label for="eq">Quote</label><input id="eq" maxlength="300"><label for="er">Info (one "Label: value" per line)</label><textarea id="er" rows="8" maxlength="2000"></textarea><label for="ea">About me</label><textarea id="ea" rows="5" maxlength="3000"></textarea><p>Wrap text in [[double brackets]] to seal it.</p><p><button class="b" data-act="save">Save</button> <button class="b" data-act="cancel">Cancel</button></p>');
+ $('eq').value=p.q;$('er').value=p.rows;$('ea').value=p.about;curPic=p.pic||'';showPic();
+ $('ef').addEventListener('change',function(){var f=this.files[0];if(f)crush(f,function(u){curPic=u;showPic()})});
+}
+async function save(){
+ try{await setDoc(doc(db,'profiles',me),{q:$('eq').value,rows:$('er').value,about:$('ea').value,pic:curPic});nav({t:'p',id:me})}
+ catch(e){msg('Could not save. Check that you are still logged in.')}
+}
+async function wpost(){
+ var t=$('wt').value.trim();if(!t||!me)return;
+ try{await addDoc(collection(db,'profiles',me,'wall'),{text:DEF[me].name+' wrote: '+t,ts:Timestamp.now()});nav({t:'p',id:me})}
+ catch(e){msg('Could not post.')}
+}
+async function seed(id){
+ try{
+  var r=doc(db,'profiles',id);if((await getDoc(r)).exists())return;
+  var b=writeBatch(db),d=DEF[id];b.set(r,{q:d.q,rows:d.rows,about:d.about});
+  d.wall.forEach(function(t,i){b.set(doc(collection(db,'profiles',id,'wall')),{text:t,ts:Timestamp.fromMillis(Date.now()-i*60000)})});
+  await b.commit();
+ }catch(e){}
+}
+
+function chat(){
+ var h='<div class="cl" id="cl">Loading...</div>';
+ h+=me?'<textarea id="ct" rows="2" maxlength="500" placeholder="Message as '+DEF[me].name+' (Enter to send. Try /poke name, /nominal, /daybreak)"></textarea><p><button class="b" data-act="send">Send</button></p>':'<p>Anyone can read the chatroom. Only cast members can post. Log in to join.</p>';
+ page('Chatroom',h);
+ if(!FB){$('cl').textContent='Chat is offline right now.';return}
+ unsub=onSnapshot(query(collection(db,'chat'),orderBy('ts','desc'),limit(100)),function(s){
+  var el=$('cl');if(!el)return;
+  el.innerHTML=s.docs.slice().reverse().map(msgHtml).join('')||'<div class="m">No messages yet.</div>';
+  el.scrollTop=el.scrollHeight;
+ },function(){var el=$('cl');if(el)el.textContent='Chat is unavailable right now.'});
+}
+async function send(){
+ var el=$('ct'),t=el&&el.value.trim();if(!t||!me)return;
+ if(t==='/nominal')t='Nominal.';
+ else if(t==='/daybreak')t='DAYBREAK telemetry: output '+(99.9+Math.random()*.09).toFixed(3)+'%. Anomalous sources detected: '+(1+((Math.random()*8)|0))+'.';
+ try{await addDoc(collection(db,'chat'),{from:me,text:t,ts:serverTimestamp()});el.value=''}
+ catch(e){msg('Could not send.')}
+}
+
+function firewall(id){
+ var f=$('fw');
+ f.innerHTML='<div class="fwin"><div class="fwt">UWC SecureGate Perimeter Firewall v3.2</div><div class="fwb"><b>ACCESS DENIED (403.7)</b><pre>User:     '+id+'\nProfile:  Tim J Vich\nContents: <span class="seal">sealed sealed sealed</span>\nReason:   Account is not associated with an active rotation.\nIncident: UWC-SG-0412-TJV\nForwarded to: Communications</pre>Your connection has been logged. Please do not attempt to log in again.<br><br><a data-p="fwback">Return to login</a></div></div>';
+ f.hidden=false;
+}
+function ui(){$('lf').hidden=!!me;$('who').hidden=!me;if(me)$('whoname').textContent=DEF[me].email;$('adm').hidden=me!=='sonoia'}
+
+$('lf').addEventListener('submit',async function(ev){
+ ev.preventDefault();
+ var id=$('em').value.trim().toLowerCase().split('@')[0];
+ if(id==='tvich'){firewall('tvich@uwc.int');return}
+ if(!FB){msg('Logins are unavailable right now.');return}
+ if(!DEF[id]){msg('Incorrect e-mail or password. This attempt has been logged.');return}
+ try{
+  await signInWithEmailAndPassword(auth,DEF[id].email,$('pw').value);
+  $('pw').value='';msg('');me=id;ui();await seed(id);nav({t:'p',id:id});
+ }catch(e){msg('Incorrect e-mail or password. This attempt has been logged.')}
+});
+$('out').addEventListener('click',async function(){if(FB)await signOut(auth);me=null;ui();msg('');nav({t:'home'})});
+$('box').addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey&&e.target.id==='ct'){e.preventDefault();send()}if(e.key==='Enter'&&e.target.id==='as')arch();});
+document.addEventListener('click',async function(e){
+ var a=e.target.closest('[data-p],[data-u],[data-act]');if(!a)return;e.preventDefault();
+ try{
+  if(a.dataset.p){if(a.dataset.p==='fwback')$('fw').hidden=true;else nav({t:a.dataset.p});return}
+  if(a.dataset.u){var u=a.dataset.u==='me'?me:a.dataset.u;if(u==='tvich')firewall('tvich@uwc.int');else if(DEF[u]&&(!DEF[u].hidden||u===me))nav({t:'p',id:u});return}
+  var c=a.dataset.act;
+  if(c==='apply')return apply();
+  if(c==='arch')return arch();
+  if(!me)return;
+  if(c==='edit')nav({t:'e',id:me});
+  else if(c==='cancel')nav({t:'p',id:me});
+  else if(c==='save')await save();
+  else if(c==='wpost')await wpost();
+  else if(c==='wdel'){await deleteDoc(doc(db,'profiles',me,'wall',a.dataset.id));nav({t:'p',id:me})}
+  else if(c==='send')await send();
+  else if(c==='ev'&&me==='sonoia')await sendEv(a.dataset.ev);
+  else if(c==='nopic'){curPic='';showPic()}
+  else if(c==='mdel')await deleteDoc(doc(db,'chat',a.dataset.id));
+ }catch(err){msg('That action was refused.')}
+});
+var curPic='';
+function hash(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h}
+function picHtml(p,ini){return p&&/^data:image\/png;base64,[A-Za-z0-9+\/=]+$/.test(p)?'<img src="'+p+'" alt="">':ini+'<small>no photo</small>'}
+function showPic(){$('ep').innerHTML=picHtml(curPic,'?')}
+function crush(file,cb){
+ var im=new Image(),u=URL.createObjectURL(file);
+ im.onload=function(){
+  var N=64,c=document.createElement('canvas');c.width=c.height=N;var x=c.getContext('2d');
+  var s=Math.min(im.width,im.height);x.drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,N,N);
+  var d=x.getImageData(0,0,N,N),B=[0,8,2,10,12,4,14,6,3,11,1,9,15,7,13,5];
+  for(var i=0;i<N*N;i++){
+   var g=.3*d.data[4*i]+.59*d.data[4*i+1]+.11*d.data[4*i+2],t=(B[(i%N&3)+4*(((i/N)|0)&3)]+.5)/16-.5;
+   var q=Math.max(0,Math.min(3,Math.round(g/85+t)))*85;
+   d.data[4*i]=d.data[4*i+1]=d.data[4*i+2]=q;d.data[4*i+3]=255;
+  }
+  x.putImageData(d,0,0);URL.revokeObjectURL(u);cb(c.toDataURL('image/png'));
+ };
+ im.onerror=function(){cb('')};im.src=u;
+}
+function msgHtml(d){
+ var m=d.data({serverTimestamps:'estimate'}),f=DEF[m.from],h=hash(d.id),nm=f?f.name:'?',tx=m.text,ks=Object.keys(DEF).filter(function(k){return!DEF[k].hidden});
+ if(h%29===0)nm=DEF[ks[h%ks.length]].name;
+ var pk=/^\/poke (\w+)$/.exec(tx);
+ if(pk&&DEF[pk[1]]&&!DEF[pk[1]].hidden)return '<div class="m"><i>'+esc(nm)+' poked '+esc(DEF[pk[1]].name)+'.</i></div>';
+ if(h%17===0)tx=tx.replace(/[a-z]/gi,function(c,i){return (h+i)%3?c:'\u2592'});
+ return '<div class="m"><b>'+esc(nm)+'</b>'+(me&&(m.from===me||me==='sonoia')?' <a class="x" data-act="mdel" data-id="'+d.id+'">delete</a>':'')+'<br>'+S(tx)+'</div>';
+}
+function registerPage(){
+ page('Register','<p>Registration is by invitation. Applications are processed by UWC Communications. Please enter your name.</p><input id="an" maxlength="40"><p><button class="b" data-act="apply">Apply</button></p><div id="ar"></div>');
+}
+function apply(){
+ var n=($('an').value.trim()||'Applicant'),h=3+((n.length*7)%9),
+ fam=['a conference','a work trip','a long-term research placement','a minor administrative matter','a family matter elsewhere'][n.length%5];
+ $('ar').innerHTML='<div class="nt">Thank you, '+esc(n)+'. Your application has been accepted.<br>You depart for Antarctica in '+h+' hours.<br>We cannot tell you what the job is.<br>Your family and friends have been told you are attending '+fam+'.<br><i>- J. Evermin, Communications</i></div>';
+}
+function daybreak(){
+ page('DAYBREAK Telemetry','<p>Live feed from the swarm. Refreshed every second.</p><canvas id="dc" width="96" height="48" style="width:384px;max-width:100%;image-rendering:pixelated;border:1px solid var(--line);background:#000"></canvas><table class="dir" id="dt"></table><p style="color:var(--mut)">Telemetry is under routine review.</p>');
+ var c=$('dc'),x=c.getContext('2d'),O=[[14,10],[80,12],[20,38],[76,36],[8,24],[88,26],[34,6],[62,42],[50,4]];
+ function tick(){
+  if(!$('dc'))return;
+  var n=Date.now()<sunUntil?5+((Math.random()*4)|0):(Math.random()<.35?1+((Math.random()*8)|0):0);
+  x.fillStyle='#000';x.fillRect(0,0,96,48);x.fillStyle='#fff';x.beginPath();x.arc(48,24,10,0,7);x.fill();
+  x.fillStyle='#888';for(var i=0;i<n;i++)x.fillRect(O[i][0],O[i][1],3,3);
+  x.fillStyle='#444';for(i=0;i<40;i++)x.fillRect((Math.random()*96)|0,(Math.random()*48)|0,1,1);
+  $('dt').innerHTML='<tr><td class="k">Solar output:</td><td>'+(99.9+Math.random()*.09).toFixed(3)+'%</td></tr><tr><td class="k">Anomalous sources:</td><td>'+(n?n:'0')+'</td></tr><tr><td class="k">Drift:</td><td>'+(Math.random()<.5?'+':'-')+(Math.random()*.01).toFixed(4)+'</td></tr><tr><td class="k">Last packet:</td><td>NO DATA</td></tr><tr><td class="k">Swarm location:</td><td><span class="seal">unavailable</span></td></tr>';
+ }
+ tick();var tm=setInterval(tick,1000);unsub=function(){clearInterval(tm)};
+}
+var LOGS=[
+'0001|P. Nair|Station time 06:00. Nominal.',
+'0044|P. Nair|Tomas has asked me to record that he is fine.',
+'0078|I. Vale|Directive 112-C received.',
+'0113|P. Nair|Recordin time, Nominal',
+'0150|T. Aydin|Boiler is fixed.',
+'0211|?|[[Nominal.]]',
+'0212|P. Nair|It is not nominal.'];
+function logs(){
+ page('Audio Logs','<p>Transcripts kept by Data Analysis. Some files are damaged.</p>'+LOGS.map(function(l){var a=l.split('|');return '<div class="w"><b>LOG '+a[0]+'</b> - '+esc(a[1])+'<br>'+S(a[2])+'</div>'}).join(''));
+}
+var ARCH=[
+['operation site 1 site antarctica','UniWorCol - Operation Site 1','Early DAYBREAK prototype facility. Shut down. Records archived. Cause of closure: [[incident report withheld]].',0],
+['cloverline station','Cloverline Station','Built on the Operation Site 1 location. Operating from 2001. Staffed by rotating teams.',0],
+['daybreak swarm sun software','DAYBREAK','A precision software update improved measurements beyond design tolerance. Subsequent readings: [[other Suns]].',1],
+['rotation 112 crew','Rotation 112','Four personnel on station. Reports show [[contradictory records]].',1],
+['hoax 2006','The 2006 hoax','Classified as a hoax. Author of the original report: [[none identified]].',1],
+['incident shutdown','Operation Site 1 shutdown report','Clearance insufficient.',9]];
+function archive(){
+ page('Archive','<p>Search UWC records. Results vary by clearance.</p><input id="as" placeholder="e.g. cloverline, daybreak, hoax, incident"><p><button class="b" data-act="arch">Search</button></p><div id="ar"></div>');
+}
+function arch(){
+ var q=$('as').value.trim().toLowerCase().split(/\s+/).filter(Boolean),r=ARCH.filter(function(a){return q.some(function(w){return a[0].indexOf(w)>-1})});
+ $('ar').innerHTML=r.length?r.map(function(a){
+  var ok=a[3]===0||(a[3]===1&&me),t=ok?a[2]:'Clearance insufficient.'+(a[3]===9&&me==='jevermin'?' Your request has been logged. Again.':'');
+  return '<div class="w"><b>'+esc(a[1])+'</b><br>'+S(t)+'</div>'}).join(''):'<p>No records match. This does not mean no records exist.</p>';
+}
+
+function banner(t,ms){var b=$('ev');b.textContent=t;b.hidden=false;clearTimeout(banner.h);banner.h=setTimeout(function(){b.hidden=true},ms)}
+function over(h,ms){var o=$('evo');o.innerHTML=h;o.hidden=false;clearTimeout(over.h);over.h=setTimeout(function(){o.hidden=true},ms)}
+function fire(t,x){
+ if(t==='broadcast')banner('UWC EMERGENCY BROADCAST: '+(x||'Stand by.'),12000);
+ else if(t==='blackout')over('<div>SIGNAL LOST</div>',4500);
+ else if(t==='lockdown')over('<div>STATION LOCKDOWN<br><small>'+esc(x||'All access is suspended. Remain where you are.')+'</small></div>',9000);
+ else if(t==='glitch'){document.body.classList.add('gl');setTimeout(function(){document.body.classList.remove('gl')},6000)}
+ else if(t==='suns'){sunUntil=Date.now()+60000;banner('DAYBREAK: anomalous sources detected. Telemetry elevated.',9000)}
+}
+$('evo').addEventListener('click',function(){this.hidden=true});
+function admin(){
+ page('Control Room','<p>Events are sent to everyone currently on the site. Chat messages from any account can be deleted from the chatroom.</p><label for="evt">Message (used by Broadcast and Lockdown)</label><input id="evt" maxlength="200"><p><button class="b" data-act="ev" data-ev="broadcast">Broadcast</button> <button class="b" data-act="ev" data-ev="blackout">Blackout</button> <button class="b" data-act="ev" data-ev="glitch">Glitch</button> <button class="b" data-act="ev" data-ev="lockdown">Lockdown</button> <button class="b" data-act="ev" data-ev="suns">Suns</button></p>');
+}
+async function sendEv(ty){
+ try{await addDoc(collection(db,'events'),{type:ty,text:($('evt').value||'').slice(0,200),ts:serverTimestamp()});msg('Event sent: '+ty)}
+ catch(e){msg('Event refused.')}
+}
+var evFirst=true;
+async function boot(){
+ try{
+  var b='https://www.gstatic.com/firebasejs/10.12.2/',A=await import(b+'firebase-app.js'),B=await import(b+'firebase-auth.js'),C=await import(b+'firebase-firestore.js');
+  initializeApp=A.initializeApp;getAuth=B.getAuth;signInWithEmailAndPassword=B.signInWithEmailAndPassword;signOut=B.signOut;onAuthStateChanged=B.onAuthStateChanged;
+  getFirestore=C.getFirestore;doc=C.doc;getDoc=C.getDoc;setDoc=C.setDoc;collection=C.collection;addDoc=C.addDoc;deleteDoc=C.deleteDoc;getDocs=C.getDocs;query=C.query;orderBy=C.orderBy;limit=C.limit;onSnapshot=C.onSnapshot;serverTimestamp=C.serverTimestamp;writeBatch=C.writeBatch;Timestamp=C.Timestamp;
+  app=initializeApp(CFG);auth=getAuth(app);db=getFirestore(app);FB=1;
+ }catch(e){msg('Online features could not load. Logins and chat are offline.');return}
+ onAuthStateChanged(auth,function(u){
+  var e=u&&u.email?u.email.toLowerCase():'',id=e.split('@')[0];
+  me=DEF[id]&&DEF[id].email===e?id:null;ui();nav(R);
+ });
+ onSnapshot(query(collection(db,'events'),orderBy('ts','desc'),limit(1)),function(s){
+  if(evFirst){evFirst=false;return}
+  s.docChanges().forEach(function(c){if(c.type==='added'){var e=c.doc.data({serverTimestamps:'estimate'});fire(e.type,e.text)}});
+ },function(){});
+}
+nav(R);
+boot();
+</script>
+</body>
+</html>
